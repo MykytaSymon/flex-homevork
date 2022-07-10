@@ -4,16 +4,9 @@
 }
 
 .background_body {
-    height: 939px;
+    height: 963px;
     width: auto;
-    background-color:rgb(109, 107, 238);
-    padding-top:30px;
-}
-
-.background_head {
-    width: 100%;
-    height: 150px;
-    background-color: aquamarine;
+    background: linear-gradient(0deg, #0e9ab3 0%, #00ddff 80%, #fff 80%, #0ff 95%, #0e9ab3 95%);
 }
 
 .container {
@@ -23,8 +16,8 @@
     margin: auto;
     border-left: 1px solid black;
     border-bottom: 2px solid black;
-    border-right: 1px solid black;
-    margin-top: -180px;
+    border-right: 1px solid black; 
+    position:relative;
 }
 
 .header {
@@ -56,9 +49,9 @@
 
 .right {
     display:flex;
-    height: 180px;
+    height: 195px;
     width: 850px;
-    text-align: right;
+    justify-content: flex-end;
 }
 
 .info {
@@ -70,8 +63,6 @@
     text-align: right;
     justify-content: space-around;
     column-gap: 10px;
-    height: 100px;
-
 }
 
 a {
@@ -79,6 +70,218 @@ a {
     color:rgb(47, 201, 201);
 }
 
+.Country_information {
+    height: 100px;
+    width: 650px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-decoration: underline;
+    
+}
+
+.information {
+    height: 80px;
+    padding-right: 30px;
+}
+
+.Hu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-end;
+
+}
+
+.india {
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.india_full {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.nepal {
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.nepal_full {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.tibet_full {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.tibet {
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.butan_full {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.butan {
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.sri_lanka_full {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.sri_lanka {
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    border: 1px solid black;
+    
+}
+
+.maldives_full {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.maldives {
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+    border: 1px solid black;
+}
+
+.backgroundjpg {
+    width:auto;
+    height: 250px;
+    margin-top: 14px;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-top: 1px solid aqua;
+    border-bottom: 1px solid aqua;
+}
+
+.nav_menu {
+    width:auto;
+    height: 40px;
+    justify-content: space-around;
+    display: flex;
+    background-color:#1f2020;
+
+}
+
+.menu {
+    padding:0;
+	margin:0;
+	list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    align-items:center;
+}
+
+.menu_item {
+    display: inline-block;
+    background-color: #1f2020;
+    position: relative;
+
+}
+
+.menu_item_link {
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.dropdown {
+    position: absolute;
+    list-style-type: none;
+    width: 200px;
+    background-color: #1f2020;
+    top: 31px;
+    display: none;
+    left: -10px;
+}
+
+.dropdown_item {
+    color: white;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+/* .menu_item:hover > .dropdown { */
+    display: block;
+    
+}
+
+.arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
 .info_menu {
-    padding-left: 650px;
+    width: auto;
+    height: 444px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_info_block {
+    width: 340px;
+    background-color: rgb(250, 241, 241);
+    border-right: 1px solid black;
+}
+
+.right_info_block {
+    width: 340px;
+    background-color: rgb(250, 241, 241);
+    border-left: 1px solid black;
+}
+
+.info_menu_title {
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.info_menu_text {
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.footer {
+    text-align:center;
+    color:white;
+    margin-top: 5px;
 }
