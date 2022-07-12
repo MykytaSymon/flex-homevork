@@ -9,7 +9,7 @@
     background: linear-gradient(0deg, #0e9ab3 0%, #00ddff 80%, #fff 80%, #0ff 95%, #0e9ab3 95%);
 }
 
-.container {
+.main_container {
     height: 930px;
     width: 1700px;
     background-color:white;
@@ -17,7 +17,6 @@
     border-left: 1px solid black;
     border-bottom: 2px solid black;
     border-right: 1px solid black; 
-    position:relative;
 }
 
 .header {
@@ -40,21 +39,21 @@
     font-size: 16px;
 }
 
-.left {
+.left_logo_container {
     display:flex;
     flex-direction: column;
     height: 180px;
     width: 850px;
 }
 
-.right {
+.right_header_container {
     display:flex;
     height: 195px;
     width: 850px;
     justify-content: flex-end;
 }
 
-.info {
+.contacts {
     color: rgb(47, 201, 201);
     font-size: 16px;
     display: flex;
@@ -70,7 +69,7 @@ a {
     color:rgb(47, 201, 201);
 }
 
-.Country_information {
+.country_information_block {
     height: 100px;
     width: 650px;
     display: flex;
@@ -80,12 +79,12 @@ a {
     
 }
 
-.information {
+.contacts_block {
     height: 80px;
     padding-right: 30px;
 }
 
-.Hu {
+.second_right_header_container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -93,86 +92,20 @@ a {
 
 }
 
-.india {
+.country_flag {
     border-radius: 50%;
     height:50px;
     width: 50px;
     border: 1px solid black;
 }
 
-.india_full {
+.country_container {
     height: 80px;
     width: 80px;
     text-align: center;
 }
 
-.nepal {
-    border-radius: 50%;
-    height:50px;
-    width: 50px;
-    border: 1px solid black;
-}
-
-.nepal_full {
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-.tibet_full {
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-.tibet {
-    border-radius: 50%;
-    height:50px;
-    width: 50px;
-    border: 1px solid black;
-}
-
-.butan_full {
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-.butan {
-    border-radius: 50%;
-    height:50px;
-    width: 50px;
-    border: 1px solid black;
-}
-
-.sri_lanka_full {
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-.sri_lanka {
-    border-radius: 50%;
-    height:50px;
-    width: 50px;
-    border: 1px solid black;
-    
-}
-
-.maldives_full {
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-.maldives {
-    border-radius: 50%;
-    height:50px;
-    width: 50px;
-    border: 1px solid black;
-}
-
-.backgroundjpg {
+.background_image {
     width:auto;
     height: 250px;
     margin-top: 14px;
@@ -183,7 +116,7 @@ a {
     border-bottom: 1px solid aqua;
 }
 
-.nav_menu {
+.nav_menu_container {
     width:auto;
     height: 40px;
     justify-content: space-around;
@@ -232,9 +165,8 @@ a {
     padding: 10px;
 }
 
-/* .menu_item:hover > .dropdown { */
+.menu_item:hover > .dropdown {
     display: block;
-    
 }
 
 .arrow {
@@ -246,23 +178,26 @@ a {
     padding: 3px;
 }
 
-.info_menu {
+.info_menu_container {
     width: auto;
     height: 444px;
     display: flex;
     justify-content: space-between;
 }
 
-.left_info_block {
+.content_block {
     width: 340px;
     background-color: rgb(250, 241, 241);
-    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
-.right_info_block {
-    width: 340px;
-    background-color: rgb(250, 241, 241);
+.right_content_border {
     border-left: 1px solid black;
+}
+
+.left_content_border {
+    border-right: 1px solid black;
 }
 
 .info_menu_title {
@@ -284,4 +219,13 @@ a {
     text-align:center;
     color:white;
     margin-top: 5px;
+}
+
+.info_menu_text {
+    text-overflow: ellipsis;
+    white-space: wrap;
+    max-width: 190px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
 }
